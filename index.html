@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fanpage / Portfolio — Contoh</title>
+  <meta name="description" content="Contoh fanpage/portfolio responsive - single file template" />
+
+  <!-- Google Fonts -->
+  <link href="image/ENHYPEN.jpg" rel="stylesheet">
+
+  <!-- CSS eksternal -->
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="logo">ENHYPEN Fanpage</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#members">Members</a></li>
+          <li><a href="#songs">Songs</a></li>
+          <li><a href="#albums">Albums</a></li>
+        </ul>
+      </nav>
+      <button class="btn">Join</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1 class="hero-title">ENHYPEN Fanpage — Beautiful Moments</h1>
+        <p class="hero-sub"></p>
+        <div style="height:20px"></div>
+        <div class="search-card">
+          <input type="text" placeholder="Location" aria-label="Location">
+          <input type="text" placeholder="Show Date" aria-label="Show Date">
+          <input type="text" placeholder="Show Time" aria-label="Show Time">
+          <div class="icon" title="Search">🔍</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card">
+          <h3 style="margin:0 0 8px">ENHYPEN</h3>
+          <p style="margin:0;color:#6b4f53"></p>
+        </div>
+
+        <div class="card" style="display:flex;align-items:center;gap:12px">
+          <img src="image/ENHYPEN 'ROMANCE _ UNTOLD' Album Cover.jpg" alt="band" style="width:84px;height:84px;object-fit:cover;border-radius:10px">
+          <div>
+            <strong>Latest Release</strong>
+            <p style="margin:6px 0 0;color:#6b4f53">Album terbaru & single hits.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- About Section -->
+    <section id="about">
+      <div class="section-title"><h2>About ENHYPEN</h2></div>
+      <div class="about">
+        <div>
+          <p>ENHYPEN adalah boy group asal Korea Selatan yang dibentuk melalui survival show I-LAND (kerja sama CJ ENM dan HYBE Labels/Belift Lab) pada tahun 2020. Nama “ENHYPEN” berasal dari kata hyphen (-) yang berarti penghubung, melambangkan harapan agar mereka bisa menyatukan orang, ide, dan dunia lewat musik. Mereka resmi debut pada 30 November 2020 dengan mini album BORDER: DAY ONE, yang langsung mendapat perhatian besar baik di Korea maupun internasional.</p>
+          <div style="height:12px"></div>
+          <div class="card"><button class="btn">Read More</button></div>
+        </div>
+        <div>
+          <img src="image/★.jpg" alt="about image">
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- members -->
+      <section id="members"></section>
+  <h2>Members</h2>
+  <div class="profile-card">
+    <img src="image/jugwon.jpg" alt="Profile">
+    <div class="profile-info">
+      <h3>Yang Jung Won</h3>
+      <p>Leader, vocalist, dancer. Lahir 9 Februari 2004. Dikenal sejak program survival I-LAND dan debut bersama ENHYPEN.</p>
+      <a href="#" class="btn">View Profile</a>
+    </div>
+  </div>
+
+  <div class="member-list">
+    <img src="image/jugwon.jpg" data-id="jungwon">
+    <img src="image/heesueng.jpg" data-id="heeseung">
+    <img src="image/jay.jpg" data-id="jay">
+    <img src="image/jake.jpg" data-id="jake">
+    <img src="image/sunghoon.jpg" data-id="sunghoon">
+    <img src="image/sunoo.jpg" data-id="sunoo">
+    <img src="image/niki.jpg" data-id="niki">
+  </div>
+</div>
+
+    <!-- Songs -->
+<section id="songs">
+  <div class="section-title"><h2>Songs</h2></div>
+  <div class="song">
+    <div class="card song-card">
+      <img src="image/ENHYPEN 'ROMANCE _ UNTOLD' Album Cover.jpg" alt="song1">
+      <div>
+        <h3 style="margin-top:0">Romance: Untold</h3>
+        <p style="color:#5a4347">Romance: Untold adalah album studio kedua ENHYPEN ...</p>
+        <div style="height:8px"></div>
+        <button class="btn" onclick="playMusic('romance')">Play</button>
+      </div>
+    </div>
+
+    <div class="card song-card">
+      <div>
+        <h3 style="margin-top:0">dark blood</h3>
+        <p style="color:#5a4347">Dark Blood adalah mini album (EP) ke-4 ENHYPEN ...</p>
+        <div style="height:8px"></div>
+        <button class="btn" onclick="playMusic('darkblood')">Play</button>
+      </div>
+      <img src="image/dark blood.jpg" alt="song2">
+    </div>
+  </div>
+
+  <!-- Audio player (disembunyikan) -->
+  <audio id="romance" src="music/ENHYPEN - XO (Only If You Say Yes) Audio.mp3"></audio>
+  <audio id="darkblood" src="music/ENHYPEN - Bite Me [Audio].mp3"></audio>
+</section>
+
+    <!-- Albums -->
+    <section id="albums">
+      <div class="section-title"><h2>Albums</h2></div>
+      <div class="albums">
+        <div class="album card"><img src="image/'DESIRE _ UNLEASH'.jpg" alt="alb1"><div>Black Swan</div></div>
+        <div class="album card"><img src="image/Border Day.jpg" alt="alb2"><div>Border Day</div></div>
+        <div class="album card"><img src="image/orange blood.jpg" alt="alb3"><div>orange blood</div></div>
+        <div class="album card"><img src="image/౨ৎ __ enhypen loose __ ౨ৎ.jpg" alt="alb4"><div>loose</div></div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section>
+      <div class="newsletter">
+        <h2 style="margin:0 0 8px">Subscribe to Our Newsletter</h2>
+        <p style="margin:0 0 16px">To get latest news of BTS</p>
+        <form id="newsletterForm" onsubmit="return false;">
+          <input type="email" id="email" placeholder="Your email address" required>
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2025 Fanpage — dibuat dengan ❤</div>
+      <div style="opacity:0.9">Home · About · Contact</div>
+    </div>
+  </footer>
+
+  <!-- Javascript eksternal -->
+  <script src="JS/main.js" defer></script>
+</body>
+</html>
+
